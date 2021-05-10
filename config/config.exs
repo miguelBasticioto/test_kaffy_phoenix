@@ -14,7 +14,8 @@ use Mix.Config
 config :kaffy,
        otp_app: :test_admin,
        ecto_repo: TestAdmin.Repo,
-       router: TestAdminWeb.Router
+       router: TestAdminWeb.Router,
+       resources: &TestAdmin.KaffyConfig.create_resources/1
 
 config :test_admin,
   ecto_repos: [TestAdmin.Repo]

@@ -6,6 +6,8 @@ defmodule TestAdmin.Users.User do
     field :email, :string
     field :name, :string
 
+    has_one :profile, TestAdmin.Users.Profile
+
     timestamps()
   end
 
